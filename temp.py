@@ -1,0 +1,3 @@
+curl --data 'query={ "terms":[ {"type":"string","term":"status_group","in_list":["paying"]}  ],  "count":1000,  "offset":0,  "fields":[   {"type":"string","term":"health","field_display_name":"Health rank "},   {"type":"health_trend","field_display_name":"Health last change "},   {"type":"string_attribute","attribute":"Success Manager","field_display_name":"Success Manager"} ], "sort_by":"display_name", "sort_order":"ASC", "scope":"all"   }'   --header 'app-token:46e9e9d7e41b76ef4d40161ef15a16c7fa3bc78ccatherine.siverts@discoverorg.com' https://app.totango.com/api/v1/search/accounts
+
+curl -X GET 'https://api.totango.com/api/v2/audit?startDate=2019-01-01&endDate=2019-01-20' -H'app-token: 46e9e9d7e41b76ef4d40161ef15a16c7fa3bc78ccatherine.siverts@discoverorg.com'
